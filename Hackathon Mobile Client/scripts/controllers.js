@@ -28,5 +28,18 @@ angular.module('App4.controllers', [])
     }
 }])
 
+.controller('BookingController', ['$scope', 'bookingServices', function ($scope, bookingServices) {
+    $scope.bookingInfo = bookingInfo;
+
+    function bookingInfo() {
+        bookingServices.getBookingInfo()
+            .then(function (success) {
+                console.log(success);
+            }, function (error) {
+                console.log(error);
+            })
+    }
+}])
+
 .controller('AccountCtrl', function($scope) {
 });
