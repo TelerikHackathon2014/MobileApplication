@@ -12,5 +12,21 @@ angular.module('App4.controllers', [])
   $scope.friend = Friends.get($stateParams.friendId);
 })
 
+.controller('HomeCtrl', function($scope) {
+})
+
+.controller('RestaurantController', ['$scope', 'restaurantServices', function ($scope, restaurantServices) {
+    $scope.restaurantInfo = restaurantInfo;
+
+    function restaurantInfo() {
+        restaurantServices.getRestaurantInfo()
+            .then(function (success) {
+                console.log(success);
+            }, function (error) {
+                console.log(error);
+            })
+    }
+}])
+
 .controller('AccountCtrl', function($scope) {
 });
