@@ -4,13 +4,32 @@
 }
 .list {
     margin : 0;
-    padding : 0;
+    padding-bottom : 0;
+    padding-top : 10px;
+    padding-left : 5px;
+    padding-right : 5px;
+
+}
+
+.bar.bar-stable {
+    background-color : #fff;
+}
+
+h1.title {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight : bold;
+    color: #428bca;
 }
 a
 {
     text-decoration: none;
 }
 
+.bar-stable {
+    border : 0px;
+    padding-bottom : 10px;
+}
 .restaurantTitleFont
 {
     font-family: Verdana;
@@ -20,9 +39,9 @@ a
 .restaurantTitleFont a
 {
     text-decoration: none;
-    font-family: Verdana;
-    font-size: large;
-    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight : bold;
+    color: #428bca;
     margin-left: auto;
     margin-right: auto;
 }
@@ -37,6 +56,6 @@ a
 }
 
 .item-avatar {
-    border : 1px solid #485fa4;
+    border : 1px solid #428bca;
     border-radius : 10px;
 }
