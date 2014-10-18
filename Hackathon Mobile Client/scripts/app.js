@@ -51,6 +51,11 @@ var app = angular.module('app', ['ionic', 'config', 'ngCordova'])
         url: '/register',
         templateUrl: 'templates/register.html'
     })
+    
+    .state('restaurants', {
+        url: '/',
+        templateUrl: 'templates/restaurants-list.html'
+    })
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/');

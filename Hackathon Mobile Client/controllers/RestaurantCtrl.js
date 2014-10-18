@@ -1,13 +1,14 @@
-app.controller('RestaurantController', ['$scope', 'restaurantServices',
-    function ($scope, restaurantServices) {
-        $scope.restaurantInfo = restaurantInfo;
+'use strict';
 
-        function restaurantInfo() {
-            restaurantServices.getRestaurantInfo()
-                .then(function (success) {
-                    console.log(success);
-                }, function (error) {
-                    console.log(error);
-                })
-        }
-}])
+app.controller('RestaurantController', ['$scope', 'RestaurantServices', function ($scope, RestaurantServices) {
+    $scope.retrieveRestaurants = retrieveRestaurants;
+
+    function retrieveRestaurants() {
+        RestaurantServices.getRestaurants()
+            .then(function (success) {
+                $scope.restaurants = success;
+            }, function (error) {
+                console.log(error);
+            })
+    }
+}]);
