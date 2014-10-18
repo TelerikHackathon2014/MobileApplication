@@ -37,6 +37,16 @@ angular.module('App4', ['ionic', 'config', 'App4.controllers', 'App4.services'])
         templateUrl: 'templates/home.html'
     })
 
+    .state('login', {
+        url: '/login',
+        templateUrl: 'templates/login.html'
+    })
+
+    .state('register', {
+        url: '/register',
+        templateUrl: 'templates/register.html'
+    })
+
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/');
 
