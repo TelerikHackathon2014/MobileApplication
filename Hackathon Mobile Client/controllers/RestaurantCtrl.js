@@ -3,7 +3,7 @@
 app.controller('RestaurantController', [
                    '$scope', 'RestaurantServices', function ($scope, RestaurantServices) {
                        $scope.retrieveRestaurants = retrieveRestaurants;
-                       $scope.retrieveImage = retrieveImage();
+                       $scope.retrieveImage = retrieveImage;
                        $scope.imageUrls = [];
                        $scope.counter = 0;
 
@@ -18,11 +18,20 @@ app.controller('RestaurantController', [
 
                        function retrieveImage(restaurant) {
                            RestaurantServices.getImage('http://api.everlive.com/v1/ISDTe40ezNnnMAmk/Files/40c9f760-5639-11e4-9793-595ba64727f8')
-                            .then(function (success) {
-                               console.log(success.Result.Uri);
-                            }, function (error) {
-                                console.log(error);
-                            })
-                        }
+                               .then(function (success) {
+                                   console.log(success.Result.Uri);
+                               }, function (error) {
+                                   console.log(error);
+                               })
+                       }
+
+                       function retrieveTemperature() {
+                           RestaurantServices.getTemperature('https://agent.electricimp.com/Mpzd6FB1b85N?temp')
+                               .then(function (headers) {
+                                   var locationStr = headers()['location-data-restourant'].split(',');
+                               }, function (error) {
+                                   console.log(error);
+                               })
+                       }
                    }
                ]);

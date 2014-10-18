@@ -29,5 +29,19 @@ app.factory('RestaurantServices', ['$http', '$q', function($http, $q) {
 
             return deferred.promise;
         },
+        getTemperature: function (url) {
+            var deferred = $q.defer();
+
+            $http.get(url)
+                .success(function (success) {
+                    deferred.resolve(success);
+
+                })
+                .error(function (error) {
+                    deferred.reject(error);
+                });
+
+            return deferred.promise;
+        }
     }
 }]);
