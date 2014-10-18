@@ -1,21 +1,30 @@
 <ion-view title="Restaurants">
     <ion-content ng-controller="RestaurantController" ng-init="retrieveRestaurants()">
-        <div class="list card" can-swipe="listCanSwipe">
-            <div class=" item item-avatar">
-                <img ng-src="https://bs3.cdn.telerik.com/v1/ISDTe40ezNnnMAmk/eb21c3e0-56b7-11e4-955f-bbcfcd62b8c9">
+        <div class="list" can-swipe="listCanSwipe">
+            <div class="item item-avatar restaurantDiv">
+                <img ng-src="http://cdn.city-discovery.com/picture_100x100/985_thumb_Dinner_Dance_at_the_Lido_1335415245.jpg">
                 <h2 class="restaurantTitleFont">
                     <a href="#/restaurants/ec010050-56b7-11e4-955f-bbcfcd62b8c9">Lido</a>
                 </h2>
-                <p> 116 Avenue des Champs-Elysees, 75008 Paris, France</p>
+                <span> 116 Avenue des Champs-Elysees, 75008 Paris, France</span>
             </div>
 
-            <div class=" item item-avatar">
+            <div class=" item item-avatar restaurantDiv">
                 <img src="http://www.jardindessens.com/pages_media/g-8-01.jpg">
                 <h2 class="restaurantTitleFont">
                     <a href="#/restaurants/40c9f760-5639-11e4-9793-595ba64727f8">Jardin des Senses</a>
                 </h2>
                 <p> 11 Avenue Saint-Lazare, 34000 Montpellier, France</p>
             </div>
+
+            <div class="item item-avatar restaurantDiv">
+                <img src="http://www.travelandleisureasia.com/siteimage/scale/100/100/322336.png">
+                <h2 class="restaurantTitleFont">
+                    <a href="#/restaurants/40c9f760-5639-11e4-9793-595ba64727f8">Issaya Siamese Club</a>
+                </h2>
+                <p>  4 Chuea Phloeng Rd, Thung Maha Mek, Sathon, Bangkok 10120, Thailand</p>
+            </div>
+
         </div>
         <!--<div class=" item item-avatar">
         <img ng-src="{{ imageUrl }}" src="">
