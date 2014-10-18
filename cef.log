@@ -1,0 +1,53 @@
+[1018/112313:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/112730:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/113255:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/113255:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/113427:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/113427:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/115545:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/115545:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/120506:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/120506:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/120749:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/120759:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/121130:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/121211:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/121804:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/121831:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/121831:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/121831:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/130634:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/130635:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/134408:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/134408:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/134637:ERROR:ipc_channel_win.cc(405)] pipe error: 232
+[1018/134729:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/134757:ERROR:ipc_channel_win.cc(405)] pipe error: 232
+[1018/135328:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/135344:ERROR:renderer_main.cc(226)] Running without renderer sandbox
+[1018/140434:ERROR:CONSOLE(178)] "String.format("Error: [$parse:syntax] Syntax Error: Token 'div' is an unexpected token at column 33 of the expression [retrieveRestaurants()>
+        <div class=] starting at [div class=].
+http://errors.angularjs.org/1.2.26/$parse/syntax?p0=div&p1=is%20an%20unexpected%20token&p2=33&p3=retrieveRestaurants()%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D&p4=div%20class%3D
+    at http://local/Simulator/lib/angular/angular.js:78:12
+    at Parser.throwError (http://local/Simulator/lib/angular/angular.js:10545:11)
+    at Parser.parse (http://local/Simulator/lib/angular/angular.js:10498:12)
+    at http://local/Simulator/lib/angular/angular.js:11306:37
+    at Scope.$eval (http://local/Simulator/lib/angular/angular.js:12702:16)
+    at pre (http://local/Simulator/lib/angular/angular.js:20002:15)
+    at nodeLinkFn (http://local/Simulator/lib/angular/angular.js:6691:13)
+    at compositeLinkFn (http://local/Simulator/lib/angular/angular.js:6105:13)
+    at nodeLinkFn (http://local/Simulator/lib/angular/angular.js:6705:24)
+    at compositeLinkFn (http://local/Simulator/lib/angular/angular.js:6105:13)", "[object Object]"): not enough substitution arguments. Had 1 but needed 2, so substitution was skipped.", source: chrome-devtools://devtools/inspector.js (178)
+[1018/140436:ERROR:CONSOLE(178)] "String.format("Error: [$parse:syntax] Syntax Error: Token 'div' is an unexpected token at column 33 of the expression [retrieveRestaurants()>
+        <div class=] starting at [div class=].
+http://errors.angularjs.org/1.2.26/$parse/syntax?p0=div&p1=is%20an%20unexpected%20token&p2=33&p3=retrieveRestaurants()%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D&p4=div%20class%3D
+    at http://local/Simulator/lib/angular/angular.js:78:12
+    at Parser.throwError (http://local/Simulator/lib/angular/angular.js:10545:11)
+    at Parser.parse (http://local/Simulator/lib/angular/angular.js:10498:12)
+    at http://local/Simulator/lib/angular/angular.js:11306:37
+    at Scope.$eval (http://local/Simulator/lib/angular/angular.js:12702:16)
+    at pre (http://local/Simulator/lib/angular/angular.js:20002:15)
+    at nodeLinkFn (http://local/Simulator/lib/angular/angular.js:6691:13)
+    at compositeLinkFn (http://local/Simulator/lib/angular/angular.js:6105:13)
+    at nodeLinkFn (http://local/Simulator/lib/angular/angular.js:6705:24)
+    at compositeLinkFn (http://local/Simulator/lib/angular/angular.js:6105:13)", "[object Object]"): not enough substitution arguments. Had 1 but needed 2, so substitution was skipped.", source: chrome-devtools://devtools/inspector.js (178)
