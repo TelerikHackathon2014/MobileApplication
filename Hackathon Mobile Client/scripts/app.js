@@ -6,7 +6,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-var app = angular.module('app', ['ionic', 'config', 'ngCordova'])
+angular.module('App4', ['ionic', 'config', 'App4.controllers', 'App4.services'])
 
 .run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
@@ -34,27 +34,12 @@ var app = angular.module('app', ['ionic', 'config', 'ngCordova'])
 
     .state('index', {
         url: '/',
-        templateUrl: 'templates/home.html'
+        templateUrl: 'templates/booking.html'
     })
     
     .state('booking', {
         url: '/booking',
         templateUrl: 'templates/booking.html'
-    })
-
-    .state('login', {
-        url: '/login',
-        templateUrl: 'templates/login.html'
-    })
-
-    .state('register', {
-        url: '/register',
-        templateUrl: 'templates/register.html'
-    })
-    
-    .state('restaurants', {
-        url: '/restaurants',
-        templateUrl: 'templates/restaurants-list.html'
     })
 
     // if none of the above states are matched, use this as the fallback
