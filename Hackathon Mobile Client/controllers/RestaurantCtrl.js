@@ -15,12 +15,12 @@ app.controller('RestaurantController', [
                        }
 
                        function retrieveImage(restaurant) {
-                           RestaurantServices.getImage('http://api.everlive.com/v1/ISDTe40ezNnnMAmk/Files/' + restaurant.Image)
-                               .then(function (success) {
-                                   $scope.imageUrl = success.Result.Uri;
-                               }, function (error) {
-                                   console.log(error);
-                               })
-                       }
+                        RestaurantServices.getImage('http://api.everlive.com/v1/ISDTe40ezNnnMAmk/Files/' + restaurant.Image)
+                            .then(function (success) {
+                                $scope.imageUrl = success.Result.Uri;
+                            }, function (error) {
+                                console.log(error);
+                            })
+                        }
                    }
-]);
+               ]);

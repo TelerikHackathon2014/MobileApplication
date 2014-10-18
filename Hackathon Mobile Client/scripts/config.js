@@ -6,6 +6,4 @@
   "name": "development",
   "apiEndpoint": "http://dev.yoursite.com:10000/"
 })
-.constant("EVERLIVE", "http://api.everlive.com/v1/ISDTe40ezNnnMAmk/")
-
-;
+.constant("EVERLIVE", "http://api.everlive.com/v1/ISDTe40ezNnnMAmk/");

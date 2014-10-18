@@ -1,10 +1,12 @@
 <ion-view title="home">
     <ion-content ng-controller="HomeCtrl">
-        <button class="button button-balanced">
-            Login
-        </button>
-        <button class="button button-energized">
-            Register
-        </button>
+        <div class="row home" ng-hide="identity.isAuthenticated()">
+            <a href="#/login" class="col button button-balanced">
+                Login
+            </a>
+            <a href="#/register" class="col col-offset-10 button button-energized">
+                Register
+            </a>
+        </div>
     </ion-content>
 </ion-view>
