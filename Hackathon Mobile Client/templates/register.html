@@ -1,9 +1,23 @@
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-    </body>
-</html>
+<ion-view title="Register">
+    <ion-content ng-controller="RegisterCtrl">
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Username</span>
+                <input type="text" placeholder="Username">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Password</span>
+                <input type="password" placeholder="Password">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Confirm Password</span>
+                <input type="password" placeholder="Confirm Password">
+            </label>
+            <div class="row">
+                <button class="button button-balanced col col-50 col-offset-25" ng-click="alert()">
+                    Register
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

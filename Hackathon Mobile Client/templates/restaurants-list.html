@@ -1,12 +1,12 @@
 <ion-view title="Restaurants">
     <ion-content ng-controller="RestaurantController" ng-init="retrieveRestaurants()">
-        <div class="list card" ng-repeat="restaurant in data" can-swipe="listCanSwipe" ng-init="retrieveImage(restaurant)">
+        <div class="list card" can-swipe="listCanSwipe">
             <div class=" item item-avatar">
-            <h2><a href="#/restaurants/{{ restaurant.Id }}">{{ restaurant.Name }}</a></h2>
-        </div>
+                <h2><a href="#/restaurants/40c9f760-5639-11e4-9793-595ba64727f8">Jardin des senses</a></h2>
+            </div>
 
-            <div class="item item-image">            
-                <img ng-src="{{ imageUrl }}" src="">
+            <div class="item item-image">
+                <img ng-src="https://bs1.cdn.telerik.com/v1/ISDTe40ezNnnMAmk/3f9a5100-5639-11e4-9793-595ba64727f8" src="">
             </div>
 
             <br />
@@ -14,6 +14,21 @@
             <a class="item item-icon-left assertive button icon-right ion-chevron-right button-calm" href="#">
                 Learn More
             </a>
-        </div>        
+        </div>
+        <div class="list card" can-swipe="listCanSwipe">
+            <div class=" item item-avatar">
+                <h2><a href="#/restaurants/ec010050-56b7-11e4-955f-bbcfcd62b8c9">Champs Elysees Lido(Demo)</a></h2>
+            </div>
+
+            <div class="item item-image">
+                <img ng-src="https://bs3.cdn.telerik.com/v1/ISDTe40ezNnnMAmk/eb21c3e0-56b7-11e4-955f-bbcfcd62b8c9" src="">
+            </div>
+
+            <br />
+
+            <a class="item item-icon-left assertive button icon-right ion-chevron-right button-calm" href="#">
+                Learn More
+            </a>
+        </div>
     </ion-content>
 </ion-view>
