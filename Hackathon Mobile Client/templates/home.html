@@ -1,10 +1,15 @@
 <ion-view title="home">
     <ion-content ng-controller="HomeCtrl">
-        <a href="#/login" class="button button-balanced">
+        <div ng-hide="identity.isAuthenticated()">
+            <a href="#/login" class="button button-balanced">
             Login
         </a>
         <a href="#/register" class="button button-energized">
             Register
         </a>
+        </div>
+        <div ng-show="identity.isAuthenticated()">
+            Hello, user!
+        </div>
     </ion-content>
 </ion-view>

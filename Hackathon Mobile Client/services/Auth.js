@@ -1,4 +1,4 @@
-app.factory('auth', function ($http, $q) {
+app.factory('auth', function ($http, $q, identity) {
     return {
         login: function (user) {
             var deferred = $q.defer();

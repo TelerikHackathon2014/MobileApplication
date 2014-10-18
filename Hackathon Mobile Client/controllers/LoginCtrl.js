@@ -1,10 +1,11 @@
-app.controller('LoginCtrl', function ($scope, $ionicPopup, auth) {
+app.controller('LoginCtrl', function ($scope, $ionicPopup, $location, auth, identity) {
     $scope.login = function (user) {
         user.grant_type = 'password';
 
         auth.login(user)
             .then(function (success) {
-
+                identity.userToken = success.Result.access_token;
+                $location.path('/');
             }, function (error) {
                 $ionicPopup.alert({
                     title: 'Login error!',
