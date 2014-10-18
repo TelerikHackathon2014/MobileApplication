@@ -21,6 +21,7 @@ app.factory('RestaurantServices', ['$http', '$q', function($http, $q) {
             $http.get(url)
                 .success(function (success) {
                     deferred.resolve(success);
+                    
                 })
                 .error(function (error) {
                     deferred.reject(error);
