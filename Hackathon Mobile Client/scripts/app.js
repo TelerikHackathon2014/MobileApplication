@@ -36,6 +36,11 @@ angular.module('App4', ['ionic', 'config', 'App4.controllers', 'App4.services'])
         url: '/',
         templateUrl: 'templates/home.html'
     })
+    
+    .state('booking', {
+        url: '/booking',
+        templateUrl: 'templates/booking.html'
+    })
 
     .state('login', {
         url: '/login',

@@ -1,43 +1,32 @@
 'use strict';
 angular.module('App4.controllers', [])
 
-.controller('DashCtrl', function ($scope) {})
-
-.controller('FriendsCtrl', function ($scope, Friends) {
-    $scope.friends = Friends.all();
+.controller('DashCtrl', function($scope) {
 })
 
-.controller('FriendDetailCtrl', function ($scope, $stateParams, Friends) {
-    $scope.friend = Friends.get($stateParams.friendId);
+.controller('FriendsCtrl', function($scope, Friends) {
+  $scope.friends = Friends.all();
 })
 
-.controller('HomeCtrl', function ($scope) {})
+.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
+  $scope.friend = Friends.get($stateParams.friendId);
+})
 
-.controller('LoginCtrl', function ($scope, auth) {
-    $scope.login = function (user) {
-        user.grant_type = 'password';
+.controller('HomeCtrl', function($scope) {
+})
 
-        auth.login(user)
-            .then(function (data) {
-                console.log(JSON.stringify(data));
+.controller('RestaurantController', ['$scope', 'restaurantServices', function ($scope, restaurantServices) {
+    $scope.restaurantInfo = restaurantInfo;
+
+    function restaurantInfo() {
+        restaurantServices.getRestaurantInfo()
+            .then(function (success) {
+                console.log(success);
             }, function (error) {
                 console.log(error);
             })
     }
-})
-
-.controller('RestaurantController', ['$scope', 'restaurantServices',
-    function ($scope, restaurantServices) {
-        $scope.restaurantInfo = restaurantInfo;
-
-        function restaurantInfo() {
-            restaurantServices.getRestaurantInfo()
-                .then(function (success) {
-                    console.log(success);
-                }, function (error) {
-                    console.log(error);
-                })
-        }
 }])
 
-.controller('AccountCtrl', function ($scope) {});
+.controller('AccountCtrl', function($scope) {
+});
