@@ -1,18 +1,32 @@
-<ion-view title="home">
-    <ion-content ng-controller="HomeCtrl">
-        <div class="row home" ng-hide="identity.isAuthenticated()">
+<ion-view title="Log into your account:">
+    <ion-content class="homeLogin" ng-controller="LoginCtrl">
+        <!--<div class="row home">
             <a href="#/login" class="col button button-balanced">
                 Login
             </a>
             <a href="#/register" class="col col-offset-10 button button-energized">
                 Register
             </a>
-            <a href="#/booking" class="col button button-balanced">
-                Booking
-            </a>
-            <a href="#/check" class="col button button-balanced">
-                Check
-            </a>
+        </div>-->
+
+        <div class="list ">
+            <label class="item item-input">
+                <input type="text" ng-model="user.username" placeholder="Enter your username">
+            </label>
+            <label class="item item-input">
+                <input type="password" ng-model="user.password" placeholder="Enter your password">
+            </label>
+            <button ng-click="login(user)" class="button button-positive">
+                Login
+            </button>
         </div>
     </ion-content>
 </ion-view>
+
+
+<!--<a href="#/booking" class="col button button-balanced">
+    Booking
+</a>
+<a href="#/check" class="col button button-balanced">
+    Check
+</a>-->
