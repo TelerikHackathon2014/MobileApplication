@@ -34,7 +34,7 @@ angular.module('App4', ['ionic', 'config', 'App4.controllers', 'App4.services'])
 
     .state('index', {
         url: '/',
-        templateUrl: 'templates/home.html'
+        templateUrl: 'templates/booking.html'
     })
     
     .state('booking', {
