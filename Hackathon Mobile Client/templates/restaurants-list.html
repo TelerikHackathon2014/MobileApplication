@@ -2,18 +2,10 @@
     <ion-content ng-controller="RestaurantController" ng-init="retrieveRestaurants()">
         <div class="list card" ng-repeat="restaurant in data" can-swipe="listCanSwipe" ng-init="retrieveImage(restaurant)">
             <div class=" item item-avatar">
-            <h2><a href="#/restaurants/{{ restaurant.Id }}">{{ restaurant.Name }}</a></h2>
-        </div>
-
-            <div class="item item-image">            
                 <img ng-src="{{ imageUrl }}" src="">
+                <h2 class="restaurantTitleFont"></h2>
+                <a href="#/restaurants/{{ restaurant.Id }}">{{ restaurant.Name }}</a>               
             </div>
-
-            <br />
-
-            <a class="item item-icon-left assertive button icon-right ion-chevron-right button-calm" href="#">
-                Learn More
-            </a>
-        </div>        
+        </div>
     </ion-content>
 </ion-view>

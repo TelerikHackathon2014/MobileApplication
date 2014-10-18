@@ -5,3 +5,14 @@
 a {
     text-decoration: none;
 }
+
+.restaurantTitleFont {
+    font-family : Verdana;
+}
+
+.restaurantTitleFont a{
+    text-decoration : none;
+    font-family : Verdana;
+    font-size : large;
+    color : red;
+}
