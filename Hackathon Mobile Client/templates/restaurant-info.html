@@ -1,41 +1,41 @@
 <ion-view title="Restaurant Info">
-    <ion-content ng-controller="RestaurantController">
+    <ion-content ng-controller="RestaurantController" ng-init="retrieveSpecificRestaurant()">
+        
         <div class="list card">
-
             <div class="item item-avatar">
-                <img src="img/restaurants/rest1.jpg">
-                <h2>Marty McFly</h2>
-                <p>November 05, 1955</p>
+                <img ng-src="https://bs3.cdn.telerik.com/v1/ISDTe40ezNnnMAmk/eb21c3e0-56b7-11e4-955f-bbcfcd62b8c9" src="">
+                <h2>{{ specificRestaurant.Name }}</h2>
             </div>
 
             <div class="item item-body">
-                <img class="full-image" src="img/restaurants/rest1.jpg">
-                <p>
-                    This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                    the content is from a card-body consisting of an image and paragraph text. The footer
-                    consists of tabs, icons aligned left, within the card-footer.
-                </p>
-                <p>
-                    <a href="#" class="subdued">1 Like</a>
-                    <a href="#" class="subdued">5 Comments</a>
-                </p>
+                <img class="full-image" ng-src="https://bs3.cdn.telerik.com/v1/ISDTe40ezNnnMAmk/eb21c3e0-56b7-11e4-955f-bbcfcd62b8c9" src="">
+                <p>{{ specificRestaurant.Description }}</p>
             </div>
 
-            <div class="item tabs tabs-secondary tabs-icon-left">
-                <a class="tab-item" href="#">
-                    <i class="icon ion-thumbsup"></i>
-                    Like
-                </a>
-                <a class="tab-item" href="#">
-                    <i class="icon ion-chatbox"></i>
-                    Comment
-                </a>
-                <a class="tab-item" href="#">
-                    <i class="icon ion-share"></i>
-                    Share
-                </a>
+            <div class="card">
+                <div class="row">
+                    <div class="item item-divider col utility">
+                        Humidity
+                    </div>
+                    <div class="item item-divider col utility">
+                        Temperature
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item item-text-wrap col utility" ng-init="retrieveHumidity()">
+                        {{ humidity }}%
+                    </div>
+                    <div class="item item-text-wrap col utility" ng-init="retrieveTemperature()">
+                        {{ temperature }}&deg;C
+                    </div>
+                </div>
+                
             </div>
 
-        </div>
+            <a href="#" class="item item-icon-left utility">
+                <i class="icon ion-location"></i>
+                Check In
+            </a>
+        </div>        
     </ion-content>
 </ion-view>
