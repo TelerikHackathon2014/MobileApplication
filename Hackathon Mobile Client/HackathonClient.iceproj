@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".abproject" />
+    <Content Include="controllers\CheckCtrl.js" />
     <Content Include="controllers\HomeCtrl.js">
       <SubType>Content</SubType>
     </Content>
@@ -1007,6 +1008,7 @@
     <Content Include="services\Auth.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="services\Check.js" />
     <Content Include="services\Identity.js">
       <SubType>Content</SubType>
     </Content>
@@ -1019,6 +1021,7 @@
     <Content Include="templates\booking.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="templates\check.html" />
     <Content Include="templates\home.html">
       <SubType>Content</SubType>
     </Content>
