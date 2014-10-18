@@ -6,7 +6,10 @@ app.controller('RestaurantController', [
                        $scope.retrieveImage = retrieveImage();
                        $scope.imageUrls = [];
                        $scope.counter = 0;
+                       $scope.images = [
+                           'https://bs1.cdn.telerik.com/v1/ISDTe40ezNnnMAmk/3f9a5100-5639-11e4-9793-595ba64727f8',
 
+                       ]
                        function retrieveRestaurants() {
                            RestaurantServices.getRestaurants()
                                .then(function (success) {
