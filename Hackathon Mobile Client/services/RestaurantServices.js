@@ -1,6 +1,6 @@
-app.factory('RestaurantServices', ['$http', '$q', function($http, $q) {
-    var restaurantApi = '';
-
+app.factory('RestaurantServices', ['$http', '$q'], function($http, $q) {
+    var restaurantApi = 'http://api.everlive.com/v1/ISDTe40ezNnnMAmk/Establishment';
+    
     return {
         getRestaurants: function() {
             var deferred = $q.defer();
@@ -16,4 +16,4 @@ app.factory('RestaurantServices', ['$http', '$q', function($http, $q) {
             return deferred.promise;
         }
     }
-}]);
+});
