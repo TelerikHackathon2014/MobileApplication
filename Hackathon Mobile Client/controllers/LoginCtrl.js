@@ -13,4 +13,4 @@ app.controller('LoginCtrl', function ($scope, $ionicPopup, $location, auth, iden
                 });
             })
     }
-})
+});
