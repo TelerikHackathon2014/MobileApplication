@@ -53,7 +53,7 @@ var app = angular.module('app', ['ionic', 'config', 'ngCordova'])
     })
     
     .state('restaurants', {
-        url: '/',
+        url: '/restaurants',
         templateUrl: 'templates/restaurants-list.html'
     })
 

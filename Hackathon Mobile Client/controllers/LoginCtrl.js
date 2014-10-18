@@ -5,7 +5,7 @@ app.controller('LoginCtrl', function ($scope, $ionicPopup, $location, auth, iden
         auth.login(user)
             .then(function (success) {
                 identity.userToken = success.Result.access_token;
-                $location.path('/');
+                $location.path('/restaurants');
             }, function (error) {
                 $ionicPopup.alert({
                     title: 'Login error!',
