@@ -1,7 +1,25 @@
-.home {
+.home
+{
     margin-top: 90%;
 }
 
-a {
+a
+{
     text-decoration: none;
+}
+
+.restaurantTitleFont
+{
+    font-family: Verdana;
+    text-align : center;
+}
+
+.restaurantTitleFont a
+{
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: large;
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
 }

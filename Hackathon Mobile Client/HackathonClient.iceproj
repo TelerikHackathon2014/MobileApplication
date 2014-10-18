@@ -1030,6 +1030,9 @@
     <Content Include="templates\login.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="templates\PlayingWithMaterials.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="templates\register.html">
       <SubType>Content</SubType>
     </Content>
