@@ -1,27 +1,19 @@
 <ion-view title="Restaurants">
-    <ion-content>
-        <ion-list ng-controller="RestaurantController" ng-init="retrieveRestaurants()"
-                  show-reorder="shouldShowReorder"
-                  can-swipe="listCanSwipe">
-            <ion-item ng-repeat="restaurant in data"
-                      class="item-thumbnail-left">
-                {{ restaurant.Id }} 
-                <a href="#/restaurants/{{ restaurant.Id }}">{{ restaurant.Name }}</a>
-                <img ng-src="{{ retrieveImage(restaurant) }}" src="">
+    <ion-content ng-controller="RestaurantController" ng-init="retrieveRestaurants()">
+        <div class="list card" ng-repeat="restaurant in data" can-swipe="listCanSwipe" ng-init="retrieveImage(restaurant)">
+            <div class=" item item-avatar">
+                <h2><a href="#/restaurants/{{ restaurant.Id }}">{{ restaurant.Name }}</a></h2>
+            </div>
 
-            <ion-option-button class="button-positive"
-                                ng-click="share(item)">
-                Share
-            </ion-option-button>
+            <div class="item item-image">
+                <img ng-src="{{ imageUrl }}" src="">
+            </div>
 
-                <!--<ion-option-button class="button-info"-->
-                <!--ng-click="edit(item)">-->
-                <!--Edit-->
-                <!--</ion-option-button>-->
-                <!--<ion-delete-button class="ion-minus-circled"-->
-                <!--ng-click="items.splice($index, 1)">-->
-                <!--</ion-delete-button>-->
-            </ion-item>
-        </ion-list>
+            <br />
+
+            <a class="item item-icon-left assertive button icon-right ion-chevron-right button-calm" href="#">
+                Learn More
+            </a>
+        </div>
     </ion-content>
 </ion-view>
