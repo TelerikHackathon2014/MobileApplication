@@ -1,0 +1,1183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>8e7eab29-dbc0-4617-85d9-67b34fa05b10</ProjectGuid>
+    <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".abproject" />
+    <Content Include="controllers\HomeCtrl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="controllers\LoginCtrl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="controllers\RestaurantCtrl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="cordova.android.js" />
+    <Content Include="cordova.ios.js" />
+    <Content Include="cordova.wp8.js" />
+    <Content Include="fonts\ionicons.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\ionicons.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\ionicons.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\ionicons.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <Content Include="lib\angular-animate\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\angular-animate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\angular-animate.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\angular-animate.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-mocks\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-mocks\angular-mocks.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-mocks\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-mocks\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-mocks\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\angular-sanitize.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\angular-sanitize.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\angular-sanitize.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-scenario\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-scenario\angular-scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-scenario\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-scenario\jstd-scenario-adapter-config.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-scenario\jstd-scenario-adapter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-scenario\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\CHANGELOG.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\release\angular-ui-router.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\release\angular-ui-router.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\common.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\compat.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\resolve.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\state.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\stateDirectives.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\stateFilters.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\templateFactory.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\urlMatcherFactory.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\urlRouter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\view.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\viewDirective.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\viewScroll.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\angular-csp.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\angular.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\angular.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\angular.min.js.gzip">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\angular.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\collide\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\collide\.gitignore">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\collide\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\collide\collide.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\collide\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\collide\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\CHANGELOG.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\circle.yml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\CODENAMES">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\checkbox\simple\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\checkbox\simple\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\checkbox\simple\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\collectionRepeat\contacts\contacts.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\collectionRepeat\contacts\contacts.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\collectionRepeat\contacts\contacts.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\collectionRepeat\contacts\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\footer\simple\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\footer\simple\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\footer\simple\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\header\simple\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\header\simple\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\header\simple\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\infiniteScroll\forever\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\infiniteScroll\forever\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\infiniteScroll\forever\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\list\animated\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\list\animated\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\list\animated\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\list\animated\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\list\reorderDelete\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\list\reorderDelete\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\list\reorderDelete\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\radio\chooseOne\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\radio\chooseOne\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\radio\chooseOne\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\refresher\refreshList\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\refresher\refreshList\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\refresher\refreshList\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\sideMenus\navWithMenu\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\sideMenus\navWithMenu\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\sideMenus\navWithMenu\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\sideMenus\simple\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\sideMenus\simple\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\sideMenus\simple\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\sideMenus\simple\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\slideBox\appIntro\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\slideBox\appIntro\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\slideBox\appIntro\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\slideBox\appIntro\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\tabs\tabsAndNav\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\tabs\tabsAndNav\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\tabs\tabsAndNav\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\textInput\floatingLabel\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\textInput\floatingLabel\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\textInput\floatingLabel\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\toggle\simple\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\toggle\simple\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\directive\toggle\simple\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\actionsheet\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\actionsheet\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\actionsheet\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\app-intro-walkthrough\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\app-intro-walkthrough\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\app-intro-walkthrough\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\checkbox\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\checkbox\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\checkbox\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\collection-repeat\contacts.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\collection-repeat\contacts.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\collection-repeat\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\collection-repeat\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\collection-repeat\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\flickr-search-example\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\flickr-search-example\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\flickr-search-example\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\frosted-glass-effect\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\frosted-glass-effect\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\frosted-glass-effect\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\google-maps\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\google-maps\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\google-maps\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\lists\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\lists\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\lists\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\loading-bar\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\loading-bar\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\loading-bar\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\modal\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\modal\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\modal\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\popup\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\popup\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\popup\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\pull-to-refresh\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\pull-to-refresh\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\pull-to-refresh\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\radio-buttons\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\radio-buttons\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\radio-buttons\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\shrinking-header\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\shrinking-header\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\shrinking-header\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\side-menu-and-navigation\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\side-menu-and-navigation\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\side-menu-and-navigation\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\sign-in-then-tabs\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\sign-in-then-tabs\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\sign-in-then-tabs\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\starter-template\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\starter-template\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\starter-template\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\swipeable-cards\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\swipeable-cards\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\swipeable-cards\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\tabs-and-navigation\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\tabs-and-navigation\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\tabs-and-navigation\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\thumbnail-list\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\thumbnail-list\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\thumbnail-list\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\toggle\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\toggle\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\old\toggle\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\actionSheet\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\actionSheet\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\actionSheet\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\loading\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\loading\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\loading\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\popover\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\popover\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\popover\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\popup\popping\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\popup\popping\index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\demos\service\popup\popping\test.scenario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\gulpfile.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\controller\listController.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\controller\navBarController.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\controller\scrollController.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\controller\sideMenuController.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\controller\tabController.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\controller\tabsController.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\deprecated.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\actionSheet.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\checkbox.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\collectionRepeat.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\content.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\exposeAsideWhen.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\gesture.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\headerFooterBar.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\infiniteScroll.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\item.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\itemDeleteButton.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\itemFloatingLabel.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\itemOptionButton.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\itemReorderButton.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\keyboardAttach.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\list.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\menuClose.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\menuToggle.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\modal.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\modalView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\navBackButton.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\navBar.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\navButtons.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\navClear.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\navView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\ngClick.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\pane.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\popover.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\popoverView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\radio.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\refresher.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\scroll.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\sideMenu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\sideMenuContent.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\sideMenus.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\slideBox.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\tab.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\tabNav.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\tabs.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\toggle.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\directive\view.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\main.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\actionSheet.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\angularOverrides.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\backdrop.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\bind.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\body.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\clickBlock.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\collectionRepeatDataSource.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\collectionRepeatManager.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\decorators\location.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\delegateService.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\gesture.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\ionicConfig.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\loading.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\modal.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\navBarDelegate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\platform.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\popover.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\popup.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\position.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\scrollDelegate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\sideMenuDelegate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\slideBoxDelegate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\tabsDelegate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\templateCache.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\templateLoader.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\service\viewService.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\css\ionic.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\css\ionic.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\fonts\ionicons.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\fonts\ionicons.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\fonts\ionicons.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\fonts\ionicons.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\js\ionic-angular.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\js\ionic-angular.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\js\ionic.bundle.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\js\ionic.bundle.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\js\ionic.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\js\ionic.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\release\version.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionic.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionicons\ionicons.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-animation.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-font.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-icons.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-variables.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_action-sheet.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_animations.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_backdrop.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_badge.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_bar.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_button-bar.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_button.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_checkbox.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_form.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_grid.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_items.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_list.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_loading.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_menu.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_mixins.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_modal.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_platform.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_popover.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_popup.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_progress.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_radio.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_range.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_reset.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_scaffolding.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_select.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_slide-box.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_tabs.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_toggle.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_type.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_util.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_variables.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ng-cordova\ng-cordova.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\app.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\config.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="services\Auth.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="services\Identity.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="services\RestaurantServices.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\main.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\booking.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\home.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\login.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\register.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\restaurants-list.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-nodpi\splashscreen.9.png" />
+    <Resource Include="App_Resources\iOS\Default-568h@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait@2x.png" />
+    <Resource Include="App_Resources\iOS\Default.png" />
+    <Resource Include="App_Resources\iOS\Default@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-40.png" />
+    <Resource Include="App_Resources\iOS\icon-40@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-60.png" />
+    <Resource Include="App_Resources\iOS\icon-60@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-72.png" />
+    <Resource Include="App_Resources\iOS\icon-72@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-76.png" />
+    <Resource Include="App_Resources\iOS\icon-76@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small@2x.png" />
+    <Resource Include="App_Resources\iOS\icon.png" />
+    <Resource Include="App_Resources\iOS\icon@2x.png" />
+    <Resource Include="App_Resources\WP8\ApplicationIcon.png" />
+    <Resource Include="App_Resources\WP8\SplashScreenImage.jpg" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
+    <Content Include="css\index.css" />
+    <Content Include="img\cordova.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="js\index.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Resources\" />
+    <Folder Include="App_Resources\Android\" />
+    <Folder Include="App_Resources\Android\drawable-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-nodpi\" />
+    <Folder Include="App_Resources\iOS\" />
+    <Folder Include="App_Resources\WP8\" />
+    <Folder Include="App_Resources\WP8\Tiles\" />
+    <Folder Include="App_Resources\WP8\Tiles\Iconic\" />
+    <Folder Include="controllers\" />
+    <Folder Include="css\" />
+    <Folder Include="fonts\" />
+    <Folder Include="img\" />
+    <Folder Include="js\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\angular-animate\" />
+    <Folder Include="lib\angular-mocks\" />
+    <Folder Include="lib\angular-sanitize\" />
+    <Folder Include="lib\angular-scenario\" />
+    <Folder Include="lib\angular-ui-router\" />
+    <Folder Include="lib\angular-ui-router\release\" />
+    <Folder Include="lib\angular-ui-router\src\" />
+    <Folder Include="lib\angular\" />
+    <Folder Include="lib\collide\" />
+    <Folder Include="lib\ionic\" />
+    <Folder Include="lib\ionic\demos\" />
+    <Folder Include="lib\ionic\demos\directive\" />
+    <Folder Include="lib\ionic\demos\directive\checkbox\" />
+    <Folder Include="lib\ionic\demos\directive\checkbox\simple\" />
+    <Folder Include="lib\ionic\demos\directive\collectionRepeat\" />
+    <Folder Include="lib\ionic\demos\directive\collectionRepeat\contacts\" />
+    <Folder Include="lib\ionic\demos\directive\footer\" />
+    <Folder Include="lib\ionic\demos\directive\footer\simple\" />
+    <Folder Include="lib\ionic\demos\directive\header\" />
+    <Folder Include="lib\ionic\demos\directive\header\simple\" />
+    <Folder Include="lib\ionic\demos\directive\infiniteScroll\" />
+    <Folder Include="lib\ionic\demos\directive\infiniteScroll\forever\" />
+    <Folder Include="lib\ionic\demos\directive\list\" />
+    <Folder Include="lib\ionic\demos\directive\list\animated\" />
+    <Folder Include="lib\ionic\demos\directive\list\reorderDelete\" />
+    <Folder Include="lib\ionic\demos\directive\radio\" />
+    <Folder Include="lib\ionic\demos\directive\radio\chooseOne\" />
+    <Folder Include="lib\ionic\demos\directive\refresher\" />
+    <Folder Include="lib\ionic\demos\directive\refresher\refreshList\" />
+    <Folder Include="lib\ionic\demos\directive\sideMenus\" />
+    <Folder Include="lib\ionic\demos\directive\sideMenus\navWithMenu\" />
+    <Folder Include="lib\ionic\demos\directive\sideMenus\simple\" />
+    <Folder Include="lib\ionic\demos\directive\slideBox\" />
+    <Folder Include="lib\ionic\demos\directive\slideBox\appIntro\" />
+    <Folder Include="lib\ionic\demos\directive\tabs\" />
+    <Folder Include="lib\ionic\demos\directive\tabs\tabsAndNav\" />
+    <Folder Include="lib\ionic\demos\directive\textInput\" />
+    <Folder Include="lib\ionic\demos\directive\textInput\floatingLabel\" />
+    <Folder Include="lib\ionic\demos\directive\toggle\" />
+    <Folder Include="lib\ionic\demos\directive\toggle\simple\" />
+    <Folder Include="lib\ionic\demos\old\" />
+    <Folder Include="lib\ionic\demos\old\actionsheet\" />
+    <Folder Include="lib\ionic\demos\old\app-intro-walkthrough\" />
+    <Folder Include="lib\ionic\demos\old\checkbox\" />
+    <Folder Include="lib\ionic\demos\old\collection-repeat\" />
+    <Folder Include="lib\ionic\demos\old\flickr-search-example\" />
+    <Folder Include="lib\ionic\demos\old\frosted-glass-effect\" />
+    <Folder Include="lib\ionic\demos\old\google-maps\" />
+    <Folder Include="lib\ionic\demos\old\lists\" />
+    <Folder Include="lib\ionic\demos\old\loading-bar\" />
+    <Folder Include="lib\ionic\demos\old\modal\" />
+    <Folder Include="lib\ionic\demos\old\popup\" />
+    <Folder Include="lib\ionic\demos\old\pull-to-refresh\" />
+    <Folder Include="lib\ionic\demos\old\radio-buttons\" />
+    <Folder Include="lib\ionic\demos\old\shrinking-header\" />
+    <Folder Include="lib\ionic\demos\old\side-menu-and-navigation\" />
+    <Folder Include="lib\ionic\demos\old\sign-in-then-tabs\" />
+    <Folder Include="lib\ionic\demos\old\starter-template\" />
+    <Folder Include="lib\ionic\demos\old\swipeable-cards\" />
+    <Folder Include="lib\ionic\demos\old\tabs-and-navigation\" />
+    <Folder Include="lib\ionic\demos\old\thumbnail-list\" />
+    <Folder Include="lib\ionic\demos\old\toggle\" />
+    <Folder Include="lib\ionic\demos\service\" />
+    <Folder Include="lib\ionic\demos\service\actionSheet\" />
+    <Folder Include="lib\ionic\demos\service\loading\" />
+    <Folder Include="lib\ionic\demos\service\popover\" />
+    <Folder Include="lib\ionic\demos\service\popup\" />
+    <Folder Include="lib\ionic\demos\service\popup\popping\" />
+    <Folder Include="lib\ionic\js\" />
+    <Folder Include="lib\ionic\js\angular\" />
+    <Folder Include="lib\ionic\js\angular\controller\" />
+    <Folder Include="lib\ionic\js\angular\directive\" />
+    <Folder Include="lib\ionic\js\angular\service\" />
+    <Folder Include="lib\ionic\js\angular\service\decorators\" />
+    <Folder Include="lib\ionic\release\" />
+    <Folder Include="lib\ionic\release\css\" />
+    <Folder Include="lib\ionic\release\fonts\" />
+    <Folder Include="lib\ionic\release\js\" />
+    <Folder Include="lib\ionic\scss\" />
+    <Folder Include="lib\ionic\scss\ionicons\" />
+    <Folder Include="lib\ng-cordova\" />
+    <Folder Include="Plugins\" />
+    <Folder Include="scripts\" />
+    <Folder Include="services\" />
+    <Folder Include="styles\" />
+    <Folder Include="templates\" />
+  </ItemGroup>
+  <Import Project="$(IceniumTargets)Build.targets" />
+  <!--
+    TODO: Uncomment this code if you need to customize the build process.
+    <Target Name="BeforeBuild">
+        <Message Text="TODO: Implement BeforeBuild" Importance="high" />
+    </Target>
+
+    <Target Name="AfterBuild">
+        <Message Text="TODO: Implement AfterBuild" Importance="high" />
+    </Target>
+    -->
+</Project>
