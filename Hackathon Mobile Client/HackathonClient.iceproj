@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".abproject" />
+    <Content Include="controllers\BookingCtrl.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="controllers\CheckCtrl.js" />
     <Content Include="controllers\HomeCtrl.js">
       <SubType>Content</SubType>
@@ -29,6 +32,7 @@
     <Content Include="controllers\LoginCtrl.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="controllers\RegisterCtrl.js" />
     <Content Include="controllers\RestaurantCtrl.js">
       <SubType>Content</SubType>
     </Content>
@@ -1008,10 +1012,14 @@
     <Content Include="services\Auth.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="services\BookingServices.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="services\Check.js" />
     <Content Include="services\Identity.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="services\Register.js" />
     <Content Include="services\RestaurantServices.js">
       <SubType>Content</SubType>
     </Content>
@@ -1025,13 +1033,13 @@
     <Content Include="templates\home.html">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="templates\HtmlPage1.html" />
     <Content Include="templates\login.html">
       <SubType>Content</SubType>
     </Content>
     <Content Include="templates\register.html">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="templates\restaurant-info.html" />
     <Content Include="templates\restaurants-list.html">
       <SubType>Content</SubType>
     </Content>

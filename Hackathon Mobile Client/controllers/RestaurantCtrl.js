@@ -7,6 +7,7 @@ app.controller('RestaurantController', [
                        $scope.retrieveSpecificRestaurant = retrieveSpecificRestaurant;
                        $scope.retrieveTemperature = retrieveTemperature;
                        $scope.retrieveHumidity = retrieveHumidity;
+                       $scope.retrieveImageTags = retrieveImageTags;
 
                        $scope.imageUrls = [];
                        $scope.counter = 0;
@@ -54,11 +55,22 @@ app.controller('RestaurantController', [
                        function retrieveHumidity() {
                            RestaurantServices.getHumidity('https://agent.electricimp.com/Mpzd6FB1b85N?humidity')
                                .then(function (headers) {
-                                   console.log(headers());
                                    $scope.humidity = headers()['restourant-humidity'];
                                }, function (error) {
                                    console.log(error);
                                })
+                       }
+
+                       function retrieveImageTags() {
+                           var imgUrl = 'http://chervenkovr.telerik-students.org/restaurant2.jpg';
+                           RestaurantServices.getImageTags('https://agent.electricimp.com/Mpzd6FB1b85N?imagga=' + imgUrl)
+                           .then(function (headers) {
+                               var imageTags = JSON.parse(headers()['imagga-response']);
+                               $scope.tags = imageTags.labels;
+                               console.log($scope.tags);
+                           }, function (error) {
+                               console.log(error);
+                           })
                        }
                    }
                ]);

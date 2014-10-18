@@ -3,13 +3,16 @@
         
         <div class="list card">
             <div class="item item-avatar">
-                <img ng-src="https://bs3.cdn.telerik.com/v1/ISDTe40ezNnnMAmk/eb21c3e0-56b7-11e4-955f-bbcfcd62b8c9" src="">
+                <img ng-src="http://chervenkovr.telerik-students.org/restaurant2.jpg" src="">
                 <h2>{{ specificRestaurant.Name }}</h2>
             </div>
 
             <div class="item item-body">
-                <img class="full-image" ng-src="https://bs3.cdn.telerik.com/v1/ISDTe40ezNnnMAmk/eb21c3e0-56b7-11e4-955f-bbcfcd62b8c9" src="">
+                <img class="full-image" ng-src="http://chervenkovr.telerik-students.org/restaurant2.jpg" src="">
                 <p>{{ specificRestaurant.Description }}</p>
+            </div>
+            <div ng-init="retrieveImageTags()">
+                <button class="button button-small button-calm tag" ng-repeat="tag in tags">{{ tag.label}}</button>
             </div>
 
             <div class="card">

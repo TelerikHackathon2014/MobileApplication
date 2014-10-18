@@ -68,6 +68,19 @@ app.factory('RestaurantServices', ['$http', '$q', function($http, $q) {
                 });
 
             return deferred.promise;
+        },
+        getImageTags: function (url, data) {
+            var deferred = $q.defer();
+
+            $http.get(url)
+                .success(function (success, status, headers) {
+                    deferred.resolve(headers);
+                })
+                .error(function (error) {
+                    deferred.reject(error);
+                });
+
+            return deferred.promise;
         }
     }
 }]);
