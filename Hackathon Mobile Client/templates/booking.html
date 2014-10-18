@@ -1,12 +1,15 @@
 <ion-view title="Booking">
-    <ion-content ng-controller="BookingController">
+    <ion-content ng-controller="BookingCtrl">
         <label class="item item-input">
-            <span class="input-label">People</span>
+            <span class="input-label">Number of people</span>
             <input type="number">
         </label>
         <label class="item item-input">
-            <span class="input-label">Date</span>
+            <span class="input-label">Desired Date</span>
             <input type="date">
         </label>
+        <button ng-click="book(bookingInfo)" class="button button-positive">
+                Book a table
+        </button>
     </ion-content>
 </ion-view>

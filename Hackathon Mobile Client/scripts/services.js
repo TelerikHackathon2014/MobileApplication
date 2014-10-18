@@ -45,25 +45,6 @@ angular.module('App4.services', [])
     }
 }])
 
-.factory('bookingServices', ['$http', '$q', 'apiEndpoint', function($http, $q, apiEndpoint) {
-    var restaurantApi = apiEndpoint + '/booking';
-
-    return {
-        getBookingInfo: function() {
-            var deferred = $q.defer();
-
-            $http.get(restaurantApi)
-                .success(function (success) {
-                    deferred.resolve(success);
-                }, function (error) {
-                    deferred.reject(error);
-                });
-
-            return deferred.promise;
-        }
-    }
-}])
-
 .factory('auth', function($http, $q, identity, UsersResource) {
     return {
         signup: function(user) {

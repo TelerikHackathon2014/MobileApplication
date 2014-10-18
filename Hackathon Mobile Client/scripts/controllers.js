@@ -28,24 +28,5 @@ angular.module('App4.controllers', [])
     }
 }])
 
-.controller('BookingController', ['$scope', 'bookingServices', function ($scope, bookingServices) {
-    $scope.bookingInfo = bookingInfo;
-    $scope.book = book;
-    
-    function book(booking) {
-        var numberOfPeople = booking.number;
-        var date = booking.date;
-    }
-
-    function bookingInfo() {
-        bookingServices.getBookingInfo()
-            .then(function (success) {
-                console.log(success);
-            }, function (error) {
-                console.log(error);
-            })
-    }
-}])
-
 .controller('AccountCtrl', function($scope) {
 });
