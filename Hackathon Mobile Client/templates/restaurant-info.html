@@ -43,6 +43,7 @@
                     Check In
                 </button>
             </div>
+
             <div style="padding-left:25px;border-radius:10px;"  class="row" ng-if="isCheckedIn">
                 <button class="item item-icon-center utility col" ng-controller="CheckCtrl">
                     <i class="icon ion-location"></i>
@@ -50,9 +51,13 @@
                 </button>
             </div>
 
-            <a href="#/restaurants/ec010050-56b7-11e4-955f-bbcfcd62b8c9/menu" class="row">
-                Get menu!
-            </a>
+            <div style="padding-top:5px;padding-left:25px;border-radius:10px;" class="row">
+                <button class="item item-icon-center utility col" onclick="location.href = '#/restaurants/ec010050-56b7-11e4-955f-bbcfcd62b8c9/menu'">
+                    <i class="icon ion-pizza"></i>
+                    Get the menu!
+                </button>
+            </div>
+            
         </div>
     </ion-content>
 </ion-view>

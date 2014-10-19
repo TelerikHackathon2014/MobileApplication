@@ -33,6 +33,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="controllers\MenuCtrl.js" />
+    <Content Include="controllers\ProfileCtrl.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="controllers\RegisterCtrl.js" />
     <Content Include="controllers\RestaurantCtrl.js">
       <SubType>Content</SubType>
