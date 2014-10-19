@@ -1,9 +1,9 @@
-<ion-view title="login">
-    <ion-content ng-controller="MenuCtrl">
+<ion-view title="Menu">
+    <ion-content ng-controller="MenuCtrl" ng-init="retrieveMenu()">
         <div class="list list-inset">
 
-            <div class="item" ng-repeat="dish in dishes">
-                {{ dish }}
+            <div class="item" ng-repeat="entry in menu.entries">
+                {{ entry.EntryName }} - {{entry.Price}} Bitcoins
             </div>
         </div>
     </ion-content>

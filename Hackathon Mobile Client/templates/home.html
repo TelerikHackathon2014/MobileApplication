@@ -1,27 +1,39 @@
-<ion-view title="Log into your account:">
-    <ion-content class="homeLogin" ng-controller="LoginCtrl">
-        <div class="list ">
-            <form class="loginForm" method="post">
-                <div class="form-group">
-                    <input class="form-control" type="text" ng-model="user.username" placeholder="Enter your username">
+<div ng-if="!token">
+    <ion-view title="Log into your account:" ng-if="!token">
+        <ion-content class="homeLogin" ng-controller="LoginCtrl">
+            <div class="list ">
+                <form class="loginForm" method="post">
+                    <div class="form-group">
+                        <input class="form-control" type="text" ng-model="user.username" placeholder="Enter your username">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" ng-model="user.password" placeholder="Enter your password">
+                    </div>
+                </form>
+                <div class="home-screen-login-buttons">
+                    <button class="btn btn-default" ng-click="login(user)">
+                        <i class="ion-checkmark-circled"></i>
+                        Login
+                    </button>
+                    <button onclick="location.href = '#/register'" class="btn btn-default">
+                        <i class="ion-person-add"></i>
+                        Register
+                    </button>
                 </div>
-                <div class="form-group">
-                    <input class="form-control" type="password" ng-model="user.password" placeholder="Enter your password">
-                </div>
-            </form>
-            <div class="home-screen-login-buttons">
-                <button class="btn btn-default" ng-click="login(user)">
-                    <i class="ion-checkmark-circled"></i>
-                    Login
-                </button>
-                <button onclick="location.href = '#/register'" class="btn btn-default">
-                    <i class="ion-person-add"></i>
-                    Register
-                </button>
             </div>
-        </div>
-    </ion-content>
-</ion-view>
+        </ion-content>
+    </ion-view>
+</div>
+
+<div ng-if="token">
+    <ion-view title="Your profile:" ng-controller="ProfileCtrl" ng-init="getUser()">
+        <ion-content class="homeLogin">
+            <div>Username: {{user.Username}}</div>
+            <div>Profile name: {{user.DisplayName}}</div>
+            <div>Email: {{user.Email}}</div>
+        </ion-content>
+    </ion-view>
+</div>
 
 <!--<a href="#/booking" class="col button button-balanced">
 Booking

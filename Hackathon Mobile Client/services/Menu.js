@@ -2,11 +2,11 @@ app.factory('Menu', function ($http, $q) {
     var restaurantApi = 'http://api.everlive.com/v1/ISDTe40ezNnnMAmk/Functions';
 
     return {
-        getMenuByShopId: function (data) {
+        getMenuByShopId: function (data, headers) {
             var deferred = $q.defer();
 
-            $http.post(restaurantApi + '/GetMenuByShopId', data)
-                .success(function (succes) {
+            $http.post(restaurantApi + '/GetMenuByShopId', data, headers)
+                .success(function (success) {
                     deferred.resolve(success);
                 })
                 .error(function (error) {
@@ -15,8 +15,10 @@ app.factory('Menu', function ($http, $q) {
 
             return deferred.promise;
         },
-        getMenuEntries: function (data) {
-            $http.post(restaurantApi + '/GetMenuEntries', data)
+        getMenuEntries: function (data, headers) {
+            var deferred = $q.defer();
+
+            $http.post(restaurantApi + '/GetMenuEntry', data, headers)
                 .success(function (success) {
                     deferred.resolve(success);
                 })
