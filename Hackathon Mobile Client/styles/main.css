@@ -80,3 +80,8 @@ a >.restaurantDiv{
 .tag {
     margin: 5px;
 }
+
+.testClass {
+    padding-bottom:40px;
+    margin-bottom : 0px;
+}

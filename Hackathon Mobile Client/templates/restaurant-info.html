@@ -1,21 +1,25 @@
 <ion-view title="Restaurant Info">
     <ion-content ng-controller="RestaurantController" ng-init="retrieveSpecificRestaurant()">
+       
+        <div class="testClass">
+            <div class="card ">
+                <div class="item item-divider" style="text-align:center;font-weight:bold;">
+                    <h2>{{ specificRestaurant.Name }}</h2>
+                </div>
 
-        <div class="list card">
-            <div class="item item-avatar">
-                <img ng-src="http://chervenkovr.telerik-students.org/restaurant2.jpg" src="">
-                <h2>{{ specificRestaurant.Name }}</h2>
+                <div class="item item-text-wrap">
+                    <img class="full-image" ng-src="http://chervenkovr.telerik-students.org/restaurant2.jpg" src="">
+                    <br />
+                    <p style="text-align:justify">{{ specificRestaurant.Description }}</p>
+                </div>
+
             </div>
 
-            <div class="item item-body">
-                <img class="full-image" ng-src="http://chervenkovr.telerik-students.org/restaurant2.jpg" src="">
-                <p>{{ specificRestaurant.Description }}</p>
-            </div>
-            <div ng-init="retrieveImageTags()">
+            <div ng-init="retrieveImageTags()" style="text-align:center">
                 <button class="button button-small button-calm tag" ng-repeat="tag in tags">{{ tag.label}}</button>
             </div>
 
-            <div class="card">
+            <div class="card" style="padding-left:25px">
                 <div class="row">
                     <div class="item item-divider col utility">
                         Humidity
@@ -32,16 +36,14 @@
                         {{ temperature }}&deg;C
                     </div>
                 </div>
-
             </div>
-
-            <div class="row" ng-if="!isCheckedIn">
+            <div style="padding-left:30px; border-radius:10px;"  class="row" ng-if="!isCheckedIn">
                 <button class="item item-icon-center utility col" ng-controller="CheckCtrl" ng-click="checkIn()">
                     <i class="icon ion-location"></i>
                     Check In
                 </button>
             </div>
-            <div class="row" ng-if="isCheckedIn">
+            <div style="padding-left:30px;border-radius:10px;"  class="row" ng-if="isCheckedIn">
                 <button class="item item-icon-center utility col" ng-controller="CheckCtrl">
                     <i class="icon ion-location"></i>
                     Already Checked In
@@ -54,3 +56,4 @@
         </div>
     </ion-content>
 </ion-view>
+
