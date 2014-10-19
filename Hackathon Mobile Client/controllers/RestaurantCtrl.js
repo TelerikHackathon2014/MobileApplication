@@ -8,6 +8,8 @@ app.controller('RestaurantController', [
                        $scope.retrieveTemperature = retrieveTemperature;
                        $scope.retrieveHumidity = retrieveHumidity;
                        $scope.retrieveImageTags = retrieveImageTags;
+                       $scope.countOfChecks = 5;
+                       $scope.userDiscount = 5;
 
                        $scope.imageUrls = [];
                        $scope.counter = 0;
