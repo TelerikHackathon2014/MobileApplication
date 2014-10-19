@@ -19,7 +19,7 @@
                 <button class="button button-small button-calm tag" ng-repeat="tag in tags">{{ tag.label}}</button>
             </div>
 
-            <div class="card" style="padding-left:25px">
+            <div class="card" style="padding-left:15px">
                 <div class="row">
                     <div class="item item-divider col utility">
                         Humidity
@@ -37,13 +37,13 @@
                     </div>
                 </div>
             </div>
-            <div style="padding-left:30px; border-radius:10px;"  class="row" ng-if="!isCheckedIn">
+            <div style="padding-left:25px; border-radius:10px;"  class="row" ng-if="!isCheckedIn">
                 <button class="item item-icon-center utility col" ng-controller="CheckCtrl" ng-click="checkIn()">
                     <i class="icon ion-location"></i>
                     Check In
                 </button>
             </div>
-            <div style="padding-left:30px;border-radius:10px;"  class="row" ng-if="isCheckedIn">
+            <div style="padding-left:25px;border-radius:10px;"  class="row" ng-if="isCheckedIn">
                 <button class="item item-icon-center utility col" ng-controller="CheckCtrl">
                     <i class="icon ion-location"></i>
                     Already Checked In
