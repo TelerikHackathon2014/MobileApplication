@@ -43,6 +43,18 @@ app.factory('check', function ($http, $q, identity) {
                 });
 
             return deferred.promise;
+        },
+        getOrder: function () {
+            var deferred = $q.defer();
+
+            $http.get('https://agent.electricimp.com/Mpzd6FB1b85N?order')
+                .success(function (success) {
+                    deferred.resolve(success);
+                }, function (error) {
+                    deferred.reject(error);
+                });
+
+            return deferred.promise;
         }
     }
 });

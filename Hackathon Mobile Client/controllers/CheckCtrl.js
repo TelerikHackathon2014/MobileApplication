@@ -1,6 +1,7 @@
 app.controller('CheckCtrl', ['$scope', '$rootScope', 'check', function ($scope, $rootScope, check, identity) {
     var userLatitude;
     var userLongitude;
+    $scope.isCheckedIn = false;
 
     check.getCoordinates('https://agent.electricimp.com/Mpzd6FB1b85N?location')
     .then(function (headers) {
@@ -23,8 +24,10 @@ app.controller('CheckCtrl', ['$scope', '$rootScope', 'check', function ($scope, 
     $scope.checkIn = function () {
         check.postCheckIn('http://api.everlive.com/v1/ISDTe40ezNnnMAmk/CheckIns', { longitude: userLongitude, latitude: userLatitude }, { headers: { 'Authorization': 'Bearer ' + $rootScope.token } })
         .then(function (success) {
-            console.log(success);
+            $scope.isCheckedIn = true;
+            console.log($scope.isCheckedIn);
 
+            check.getOrder().then(function (success) { console.log('beep'); console.log(success); }, function (error) { });
         }, function(error) {
             console.log(error);
         });

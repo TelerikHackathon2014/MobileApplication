@@ -1,6 +1,6 @@
 <ion-view title="Restaurant Info">
     <ion-content ng-controller="RestaurantController" ng-init="retrieveSpecificRestaurant()">
-        
+
         <div class="list card">
             <div class="item item-avatar">
                 <img ng-src="http://chervenkovr.telerik-students.org/restaurant2.jpg" src="">
@@ -32,15 +32,21 @@
                         {{ temperature }}&deg;C
                     </div>
                 </div>
-                
+
             </div>
 
-            <div class="row">
+            <div class="row" ng-if="!isCheckedIn">
                 <button class="item item-icon-center utility col" ng-controller="CheckCtrl" ng-click="checkIn()">
                     <i class="icon ion-location"></i>
                     Check In
                 </button>
-            </div>            
-        </div>        
+            </div>
+            <div class="row" ng-if="isCheckedIn">
+                <button class="item item-icon-center utility col" ng-controller="CheckCtrl">
+                    <i class="icon ion-location"></i>
+                    Already Checked In
+                </button>
+            </div>    
+        </div>
     </ion-content>
 </ion-view>
