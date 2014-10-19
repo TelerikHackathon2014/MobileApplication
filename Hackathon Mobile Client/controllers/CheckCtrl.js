@@ -1,18 +1,16 @@
-app.controller('CheckCtrl', ['$scope', 'check', function ($scope, check, identity) {
+app.controller('CheckCtrl', ['$scope', '$rootScope', 'check', function ($scope, $rootScope, check, identity) {
+    var userLatitude;
+    var userLongitude;
+
     check.getCoordinates('https://agent.electricimp.com/Mpzd6FB1b85N?location')
     .then(function (headers) {
         var locationStr = headers()['location-data-restourant'].split(',');
         var deviceLatitude = locationStr[0] * 1;
         var deviceLongtitude = locationStr[1] * 1;
 
-        console.log(deviceLatitude);
-        console.log(deviceLongtitude);
-
         navigator.geolocation.getCurrentPosition(function (success) {
-            var userLatitude = success.coords.latitude * 1;
-            var userLongitude = success.coords.longitude * 1;
-
-            console.log(success);
+            userLatitude = success.coords.latitude * 1;
+            userLongitude = success.coords.longitude * 1;
 
             // TODO: for presentation use same location
             var distance = check.calculateDistance(deviceLatitude, deviceLongtitude, userLatitude, userLongitude);
@@ -21,4 +19,14 @@ app.controller('CheckCtrl', ['$scope', 'check', function ($scope, check, identit
             console.log(error);
         });
     });
+
+    $scope.checkIn = function () {
+        check.postCheckIn('http://api.everlive.com/v1/ISDTe40ezNnnMAmk/CheckIns', { longitude: userLongitude, latitude: userLatitude }, { headers: { 'Authorization': 'Bearer ' + $rootScope.token } })
+        .then(function (success) {
+            console.log(success);
+
+        }, function(error) {
+            console.log(error);
+        });
+    }
 }]);

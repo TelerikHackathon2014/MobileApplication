@@ -36,7 +36,6 @@ app.controller('RestaurantController', [
                        function retrieveSpecificRestaurant() {
                            RestaurantServices.getSpecificRestaurant($stateParams.id)
                             .then(function (success) {
-                                console.log(success);
                                 $scope.specificRestaurant = success.Result;
                             }, function (error) {
                                 console.log(error);
@@ -67,7 +66,6 @@ app.controller('RestaurantController', [
                            .then(function (headers) {
                                var imageTags = JSON.parse(headers()['imagga-response']);
                                $scope.tags = imageTags.labels;
-                               console.log($scope.tags);
                            }, function (error) {
                                console.log(error);
                            })

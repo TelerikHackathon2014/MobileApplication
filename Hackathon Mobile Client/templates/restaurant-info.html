@@ -35,10 +35,12 @@
                 
             </div>
 
-            <a href="#" class="item item-icon-left utility">
-                <i class="icon ion-location"></i>
-                Check In
-            </a>
+            <div class="row">
+                <button class="item item-icon-center utility col" ng-controller="CheckCtrl" ng-click="checkIn()">
+                    <i class="icon ion-location"></i>
+                    Check In
+                </button>
+            </div>            
         </div>        
     </ion-content>
 </ion-view>
