@@ -1,6 +1,7 @@
 <ion-view title="Restaurants found near you:">
     <ion-content ng-controller="RestaurantController" ng-init="retrieveRestaurants()">
         <div class="list" can-swipe="listCanSwipe">
+
             <div class="item item-avatar restaurantDiv" onclick="location.href = '#/restaurants/ec010050-56b7-11e4-955f-bbcfcd62b8c9'">
                 <img ng-src="http://cdn.city-discovery.com/picture_100x100/985_thumb_Dinner_Dance_at_the_Lido_1335415245.jpg">
                 <h2 class="restaurantTitleFont">
@@ -9,38 +10,36 @@
                 <span> 116 Avenue des Champs-Elysees, 75008 Paris, France</span>
             </div>
 
-            <div class="item item-avatar restaurantDiv">
-                <img src="http://www.jardindessens.com/pages_media/g-8-01.jpg">
-                <a href="#/restaurants/40c9f760-5639-11e4-9793-595ba64727f8">
+            <div class="item item-avatar restaurantDiv" onclick="location.href = '#/restaurants/40c9f760-5639-11e4-9793-595ba64727f8'">
+                <img ng-src="http://www.jardindessens.com/pages_media/g-8-01.jpg">
                     <h2 class="restaurantTitleFont">
-                        Jardin des Senses
+                        <a>Jardin des Senses</a>
                     </h2>
-                    <p> 11 Avenue Saint-Lazare, 34000 Montpellier, France</p>
-                </a>
+                    <span> 11 Avenue Saint-Lazare, 34000 Montpellier, France</span>
             </div>
 
-            <div class="item item-avatar restaurantDiv">
-                <img src="http://www.travelandleisureasia.com/siteimage/scale/100/100/322336.png">
+            <div class="item item-avatar restaurantDiv" onclick="location.href = '#/restaurants/40c9f760-5639-11e4-9793-595ba64727f8'">
+                <img ng-src="http://www.travelandleisureasia.com/siteimage/scale/100/100/322336.png">
                 <h2 class="restaurantTitleFont">
-                    <a href="#/restaurants/40c9f760-5639-11e4-9793-595ba64727f8">Issaya Siamese Club</a>
+                    <a>Issaya Siamese Club</a>
                 </h2>
-                <p>  4 Chuea Phloeng Rd, Thung Maha Mek, Sathon, Bangkok 10120, Thailand</p>
+                <span>4 Chuea Phloeng Rd, Thung Maha Mek, Sathon, Bangkok 10120, Thailand</span>
             </div>
 
-            <div class="item item-avatar restaurantDiv">
-                <img src="http://www.travelandleisureasia.com/siteimage/scale/100/100/322336.png">
+            <div class="item item-avatar restaurantDiv" onclick="location.href = '#/restaurants/40c9f760-5639-11e4-9793-595ba64727f8'">
+                <img ng-src="http://s1.hubimg.com/u/6126060_f496.jpg">
                 <h2 class="restaurantTitleFont">
-                    <a href="#/restaurants/40c9f760-5639-11e4-9793-595ba64727f8">Issaya Siamese Club</a>
+                    <a>Jack's Gourmet Restaurant</a>
                 </h2>
-                <p>  4 Chuea Phloeng Rd, Thung Maha Mek, Sathon, Bangkok 10120, Thailand</p>
+                <span>1903 Business Loop 70 East Columbia, Missouri 65201</span>
             </div>
 
-            <div class="item item-avatar restaurantDiv">
-                <img src="http://www.travelandleisureasia.com/siteimage/scale/100/100/322336.png">
+            <div class="item item-avatar restaurantDiv" onclick="location.href = '#/restaurants/40c9f760-5639-11e4-9793-595ba64727f8'">
+                <img ng-src="http://www.visitsweden.com/ImageVault/Images/id_188/conversionFormat_13/scope_0/conversionFormatType_Jpeg/ImageVaultHandler.aspx">
                 <h2 class="restaurantTitleFont">
-                    <a href="#/restaurants/40c9f760-5639-11e4-9793-595ba64727f8">Issaya Siamese Club</a>
+                    <a>El Celler de Can Roca</a>
                 </h2>
-                <p>  4 Chuea Phloeng Rd, Thung Maha Mek, Sathon, Bangkok 10120, Thailand</p>
+                <span>Calle Can Sunyer, 48, 17007 Girona, Spain</span>
             </div>
 
         </div>
