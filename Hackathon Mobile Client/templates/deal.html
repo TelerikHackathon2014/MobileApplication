@@ -1,0 +1,19 @@
+<ion-view title="Restaurant Info">
+    <ion-content ng-controller="RestaurantController" ng-init="retrieveSpecificRestaurant()">
+
+        <div class="list card">
+            
+            <div class="item item-body">
+                <img class="full-image" ng-src="http://chervenkovr.telerik-students.org/restaurant2.jpg">
+                <p>You have been in this restaurant {{ countOfChecks }} times. 
+                Because you are such a loyal customer, you get {{ userDiscount }}% discount for the next month.</p>
+            </div>
+            
+            <div class="row">
+                <button class="item item-icon-center utility col" ng-controller="CheckCtrl" ng-click="claimDiscount()">
+                    Claim your discount
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

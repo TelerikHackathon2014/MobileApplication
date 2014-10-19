@@ -1,7 +1,7 @@
-app.controller('CheckCtrl', ['$scope', '$rootScope', 'check', function ($scope, $rootScope, check, identity) {
+app.controller('CheckCtrl', ['$scope', '$rootScope', 'check', '$location', function ($scope, $rootScope, check, $location) {
     var userLatitude;
     var userLongitude;
-
+    
     check.getCoordinates('https://agent.electricimp.com/Mpzd6FB1b85N?location')
     .then(function (headers) {
         var locationStr = headers()['location-data-restourant'].split(',');
@@ -24,9 +24,13 @@ app.controller('CheckCtrl', ['$scope', '$rootScope', 'check', function ($scope, 
         check.postCheckIn('http://api.everlive.com/v1/ISDTe40ezNnnMAmk/CheckIns', { longitude: userLongitude, latitude: userLatitude }, { headers: { 'Authorization': 'Bearer ' + $rootScope.token } })
         .then(function (success) {
             console.log(success);
-
+            $location.path('/deals');
         }, function(error) {
             console.log(error);
         });
+    }
+
+    $scope.claimDiscount = function () {
+        $location.path('/restaurants');
     }
 }]);

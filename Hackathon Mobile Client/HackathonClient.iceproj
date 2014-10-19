@@ -1030,6 +1030,7 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="templates\check.html" />
+    <Content Include="templates\deal.html" />
     <Content Include="templates\home.html">
       <SubType>Content</SubType>
     </Content>
