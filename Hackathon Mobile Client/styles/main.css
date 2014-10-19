@@ -1,18 +1,17 @@
-.home
-{
+.home {
     margin-top: 90%;
 }
+
 .list {
     margin : 0;
     padding-bottom : 0;
     padding-top : 10px;
     padding-left : 5px;
     padding-right : 5px;
-
 }
 
-.homeLogin {
-    background-color : #666;
+.home-screen-login-buttons {
+    text-align: center;
 }
 
 .bar.bar-stable {
@@ -25,10 +24,7 @@ h1.title {
     font-weight : bold;
     color: #428bca;
 }
-a
-{
-    text-decoration: none;
-}
+
 
 .bar-stable {
     border : 0px;
@@ -62,6 +58,19 @@ a
 .item-avatar {
     border : 1px solid #428bca;
     border-radius : 10px;
+}
+
+
+.loginForm {
+    padding-bottom : 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a >.restaurantDiv{
+    text-decoration: none;
 }
 
 .utility {

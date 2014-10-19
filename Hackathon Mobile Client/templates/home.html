@@ -1,32 +1,31 @@
 <ion-view title="Log into your account:">
     <ion-content class="homeLogin" ng-controller="LoginCtrl">
-        <!--<div class="row home">
-            <a href="#/login" class="col button button-balanced">
-                Login
-            </a>
-            <a href="#/register" class="col col-offset-10 button button-energized">
-                Register
-            </a>
-        </div>-->
-
         <div class="list ">
-            <label class="item item-input">
-                <input type="text" ng-model="user.username" placeholder="Enter your username">
-            </label>
-            <label class="item item-input">
-                <input type="password" ng-model="user.password" placeholder="Enter your password">
-            </label>
-            <button ng-click="login(user)" class="button button-positive">
-                Login
-            </button>
+            <form class="loginForm" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="text" ng-model="user.username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" ng-model="user.password" placeholder="Enter your password">
+                </div>
+            </form>
+            <div class="home-screen-login-buttons">
+                <button class="btn btn-default" ng-click="login(user)">
+                    <i class="ion-checkmark-circled"></i>
+                    Login
+                </button>
+                <button onclick="location.href = '#/register'" class="btn btn-default">
+                    <i class="ion-person-add"></i>
+                    Register
+                </button>
+            </div>
         </div>
     </ion-content>
 </ion-view>
 
-
 <!--<a href="#/booking" class="col button button-balanced">
-    Booking
+Booking
 </a>
 <a href="#/check" class="col button button-balanced">
-    Check
+Check
 </a>-->
