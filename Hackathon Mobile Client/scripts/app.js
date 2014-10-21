@@ -37,6 +37,11 @@ var app = angular.module('app', ['ionic', 'config', 'ngCordova'])
                        templateUrl: 'templates/home.html'
                    })
     
+            .state('getDiscountPage', {
+                url: '/getDiscountPage',
+                       templateUrl: 'templates/discountPage.html'
+            })
+
             .state('getLocalDeals', {
                        url: '/getLocalDeals',
                        templateUrl: 'templates/deals.html'

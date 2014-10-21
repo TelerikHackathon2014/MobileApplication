@@ -1031,6 +1031,7 @@
     <Content Include="styles\main.css">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="templates\discountPage.html" />
     <Content Include="templates\deals.html" />
     <Content Include="templates\booking.html">
       <SubType>Content</SubType>
